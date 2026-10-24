@@ -69,12 +69,67 @@
 
     
   - ##Regression:
-  In machine learning, **regression models** are a type of supervised learning algorithm used to predict **continuous numerical values** . Output will not be yes/no or a category but we predict some number or value
-  
-  Unlike classification models, which categorize data into discrete groups (e.g., spam vs. not spam), regression models estimate a specific value or quantity. Common applications include predicting the **price of a house** or the **stock price** on a given date.
-  
-  Key examples mentioned in the video include:
-  
-  *   **Linear Regression**: Uses the formula $y = mx + c$ to represent data as a straight line (25:54).
-  *   **Polynomial Regression**: Uses a higher-order formula (e.g., $y = m_1x + m_2x^2 + m_3x^3 + c$) to fit a curve to the data.
+    In machine learning, **regression models** are a type of supervised learning algorithm used to predict **continuous numerical values** . Output will not be yes/no or a category but we predict some number or value
+    
+    Unlike classification models, which categorize data into discrete groups (e.g., spam vs. not spam), regression models estimate a specific value or quantity. Common applications include predicting the **price of a house** or the **stock price** on a given date.
+        ## Linear and Polynomial Regression 
+    
+    *   **Regression Models Overview**:
+    
+        *   Used to predict **continuous numerical values** rather than discrete categories.
+        *   Common use cases include predicting house prices or stock values.
+    
+    *   **Linear Regression**:
+    
+        *   Represents the relationship between features and the target as a **straight line**.
+        *   Defined by the formula: $y = mx + c$
+            *   $y$: Predicted output.
+            *   $x$: Input feature.
+            *   $m$: Slope of the line.
+            *   $c$: Intercept.
+    
+    *   **Polynomial Regression**:
+    
+        *   Used to capture more complex, non-linear relationships by creating a **curved line** fit.
+        *   Defined by higher-order formulas, such as: $y = m_1x + m_2x^2 + m_3x^3 + c$
+     
+
+## Evaluating Regression Models
+
+Regression accuracy is measured by calculating how far the model's predictions deviate from the actual values. Common metrics include:
+
+*   **Mean Absolute Error (MAE)**: The average of the absolute differences between predicted and actual values.
+*   **Mean Squared Error (MSE)**: The average of the squared differences between predicted and actual values.
+*   **Root Mean Square Error (RMSE)**: The square root of the MSE.
+*   **R-squared Score**: A statistical measure calculated as 1 minus the ratio of the MSE to the variance of the actual values.
+
+## Unsupervised Learning
+
+Unlike supervised learning, this approach uses data without pre-existing labels. The model identifies hidden patterns and structures independently.
+
+*   **Clustering**: A primary technique for grouping data based on similarities.
+*   **K-Means Clustering**: A popular algorithm that segments raw, unlabeled data into distinct clusters or groups based on feature patterns.
+
+## Reinforcement Learning
+
+This learning method involves an agent that improves through trial and error, rather than following a static labeled dataset.
+
+*   **Feedback Mechanism**: The agent takes actions and receives feedback in the form of rewards for correct outcomes or penalties for errors.
+*   **Goal Optimization**: The model iteratively adjusts its behavior to maximize its total reward, effectively learning an optimal strategy for navigation or decision-making.
+
+## Curse of Dimensionality
+
+This refers to the performance degradation that can occur when a dataset includes too many dimensions (features).
+
+*   **Impact**: Adding excessive or irrelevant features increases the complexity of the data space, making it harder for the model to identify meaningful patterns and often reducing predictive accuracy.
+*   **Dimensionality Reduction**: Techniques like Principal Component Analysis (PCA) are used to condense large numbers of features into a smaller, meaningful set, mitigating the curse while retaining critical information.
+
+## Feature Engineering
+
+This process involves preparing and transforming raw data into a format that machine learning models can process effectively.
+
+*   **Rescaling (Normalization/Standardization)**: Transforms numerical features to a uniform range (such as 0 to 1) to prevent features with larger magnitudes from dominating those with smaller scales.
+*   **One-Hot Encoding**: A method for converting categorical text data into binary numerical format by creating separate columns for each category.
+*   **Handling Missing Data**: Strategies include removing incomplete records or filling in gaps using statistical measures like mean, median, or mode.
+*   **Feature Extraction**: The practice of creating new, more meaningful features from existing data, such as deriving specific hours or days from a timestamp or extracting sentiment scores from text comments.
     
